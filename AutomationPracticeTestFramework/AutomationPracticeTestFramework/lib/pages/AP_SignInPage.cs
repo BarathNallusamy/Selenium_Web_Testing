@@ -10,11 +10,11 @@ namespace AutomationPracticeTestFramework
         private IWebElement _emailFeild => SeleniumDriver.FindElement(By.Id("email"));
         private IWebElement _passwordFeild => SeleniumDriver.FindElement(By.Id("passwd"));
         private IWebElement _alertMessage => SeleniumDriver.FindElement(By.ClassName("alert"));
-        private IWebElement _forgotPassword => SeleniumDriver.FindElement(By.LinkText("Forgot your password?"));
         private IWebElement _submitBtn => SeleniumDriver.FindElement(By.Id("SubmitLogin"));
         private IWebElement _subscribeEmail => SeleniumDriver.FindElement(By.Id("email_create"));
         private IWebElement _createSubmitBtn => SeleniumDriver.FindElement(By.Id("SubmitCreate"));
         private IWebElement _createAccAlertMessage => SeleniumDriver.FindElement(By.Id("create_account_error"));
+        private IWebElement _forgotPassword => SeleniumDriver.FindElement(By.LinkText("Forgot your password?"));
 
         public AP_SignInPage(IWebDriver seleniumDriver)
         {

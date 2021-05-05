@@ -7,7 +7,7 @@ namespace AutomationPracticeTestFramework
 
         public IWebDriver SeleniumDriver { get; }
         private string HomePageUrl = AppConfigReader.BaseUrl;
-        private IWebElement _signinLink => SeleniumDriver.FindElement(By.LinkText("Sign in"));
+        private IWebElement _signinLink => SeleniumDriver.FindElement(By.ClassName("login"));
 
         public AP_HomePage(IWebDriver seleniumDriver)
         {
