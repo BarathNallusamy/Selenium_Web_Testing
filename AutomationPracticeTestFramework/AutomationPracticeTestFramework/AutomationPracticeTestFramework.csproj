@@ -115,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="BDD\AP_CreateAccount.feature" />
     <None Include="BDD\AP_SignIn.feature" />
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />

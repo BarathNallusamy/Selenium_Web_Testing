@@ -21,5 +21,12 @@ namespace AutomationPracticeTestFramework.BDD
         {
             Assert.That(_website.getPageTitle(), Is.EqualTo("Forgot your password - My Store"));
         }
+
+        [AfterScenario]
+        public void DisposeWebDriver()
+        {
+            _website.SeleniumDriver.Quit();
+            _website.SeleniumDriver.Dispose();
+        }
     }
 }
